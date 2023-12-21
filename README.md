@@ -72,8 +72,9 @@ config:
   ZO_S3_SERVER_URL: "https://myminio-hl.tenant-lite.svc.cluster.local:9000"
   ZO_S3_BUCKET_NAME: "openobserve1"
   ZO_S3_REGION_NAME: "us-east-1"
-  ZO_S3_PROVIDER: "s3"
+  ZO_S3_PROVIDER: "minio"
   ZO_S3_ALLOW_INVALID_CERTIFICATES: "true" # minio by default installs a self signed certificate
+  ZO_S3_FEATURE_FORCE_PATH_STYLE: "true"
 ```
 
 Now let's install OpenObserve using the helm chart.
