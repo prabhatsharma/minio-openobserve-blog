@@ -79,7 +79,7 @@ config:
 Now let's install OpenObserve using the helm chart.
 
 ```shell
-helm repo add openobserve https://openobserve.github.io/openobserve-helm-chart
+helm repo add openobserve https://charts.openobserve.ai
 helm repo update
 
 kubectl create namespace o2
